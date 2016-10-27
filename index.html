@@ -5,64 +5,88 @@
 	<meta charset="utf-8">
 	<style media="screen">
   .Discord{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 30vw;
-    border-radius: 50px;
-  }
-  #Title-Wrap{
-    border-bottom: 1px solid #303337;
-    box-shadow: 0 1px 0 rgba(0,0,0,.06);
-    background-color: #36393e;
-    padding-right: -22px;
-
-    min-height: 57px;
-    -moz-box-orient: horizontal;
-    -moz-box-align: center;
-    box-sizing: border-box;
-    display: flex;
-    margin: 0;
-    align-items: center;
-    flex-direction: row;
-    flex-shrink: 0;
-  }.Title{
-    font-size: 20px;
-    margin-right: 0px;
+  margin-top: 100px;
+  margin-right: -10px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 30vw;
+  min-width: 480px;
+  min-height: 270px;
+  max-height: 24vw;
+  max-width: 35vw;
+}
+#Title-Wrap{
+  border-top-left-radius: 10px;
+  border-bottom: 1px solid #303337;
+  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+  background-color: #23272A;
+  min-height: 35px;
+  -moz-box-orient: horizontal;
+  -moz-box-align: center;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 0;
+}.Title{
+  font-size: 20px;
+  margin-left: 20px;
+  line-height: 22px;
+  color: white;
+  vertical-align: baseline;
+}
+.Topic{
+  font-size: 18px;
+  color: white;
+  position: relative;
+  max-height: 22px;
+  white-space: nowrap;
+  line-height: 22px;
+  -moz-box-flex: 1;
+  flex: 1;
+  margin-left: 2px;
+  padding-left: 12px;
+  vertical-align: baseline;
+}
+.Topic::before{
+  font-size: 20px;
+  color: white;
+  width: 1px;
+  height: 22px;
+  margin-right: 10px;
+  content: '|';
+}
+.Chat{
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-color: #36393e;
+  min-height: 100%;
+  max-height: 100%;
+}
+.Send{
+  background-color: #999;
+  min-height: 35px;
+  border-bottom-left-radius: 10px;
+}
+.Send-Inline{
+    border-color: rgba(255,255,255,.2);
+    background-color: rgba(255,255,255,.06);
+    border: 2px solid #dadddf;
+    border-radius: 3px;
+    margin-top: 3px;
     margin-left: 20px;
-    line-height: 22px;
-    color: white;
-    vertical-align: baseline;
-  }
-  .Topic{
-    font-size: 18px;
-    color: white;
     position: relative;
-    max-height: 22px;
-    white-space: nowrap;
-    line-height: 22px;
-    -moz-box-flex: 1;
-    flex: 1;
-    margin-left: 8px;
-    padding-left: 12px;
+    padding: 12px 10px;
+    width: 100%;
     vertical-align: baseline;
-  }
-  .Topic::before{
-    font-size: 20px;
-    color: white;
-    width: 1px;
-    height: 22px;
-    margin-right: 10px;
-    content: '|';
-  }
-  .Chat{
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    background-color: #289123;
-    min-height: 100%;
-    max-height: 100%;
-  }
+}
+
+
 
 	</style>
 </head>
